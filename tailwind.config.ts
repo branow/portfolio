@@ -17,6 +17,7 @@ const config: Config = {
         'lemon-mist':'rgba(255, 255, 15, 0.1)',
         'olive-yellow':'rgba(219, 217, 85, 1)',
         'soft-sunlight':'rgba(242, 240, 132, 1)',
+        'gold':'rgba(255, 193, 0, 1)',
       }
     },
   },
