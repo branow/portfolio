@@ -1,7 +1,7 @@
 import React from "react";
-import Section from "./Section";
+import Section from "../Section";
 import Timeline from "./Timeline";
-import { education } from "./../../public/education";
+import { education } from "./../../../../public/education";
 
 const EducationSection = () => {
   return (

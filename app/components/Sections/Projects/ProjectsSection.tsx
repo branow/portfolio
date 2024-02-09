@@ -1,9 +1,9 @@
 import React from "react";
-import Section from "./Section";
+import Section from "../Section";
 import ProjectCard from "./ProjectCard";
-import memo from "./../../public/projects/memo-title.png";
-import eco from "./../../public/projects/eco-title.png";
-import lcards from "./../../public/projects/lcards-title.png";
+import memo from "./../../../../public/projects/memo-title.png";
+import eco from "./../../../../public/projects/eco-title.png";
+import lcards from "./../../../../public/projects/lcards-title.png";
 
 const ProjectsSection = () => {
   return (

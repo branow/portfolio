@@ -18,7 +18,8 @@ export const ProjectCard = ({
   return (
     <>
       <Link href={href}>
-        <div className="card w-[400px] shadow-xl hover:bg-subtle-shadow">
+        <div className="card w-[350px] shadow-xl hover:bg-subtle-shadow 
+        xl:w-[370px] 2xl:w-[600px]">
           <figure>
             <Image alt={title + " image"} src={image} />
           </figure>

@@ -1,14 +1,14 @@
 import React from 'react'
-import Section from './Section'
+import Section from '../Section'
 import SkillCard from './SkillCard'
-import java from './../../public/skills/java.png'
-import spring from './../../public/skills/spring.png'
-import javafx from './../../public/skills/javafx.png'
-import mysql from './../../public/skills/mysql.png'
-import git from './../../public/skills/git.png'
-import reactjs from './../../public/skills/reactjs.png'
-import nextjs from './../../public/skills/nextjs.png'
-import tailwind from './../../public/skills/tailwind.png'
+import java from './../../../../public/skills/java.png'
+import spring from './../../../../public/skills/spring.png'
+import javafx from './../../../../public/skills/javafx.png'
+import mysql from './../../../../public/skills/mysql.png'
+import git from './../../../../public/skills/git.png'
+import reactjs from './../../../../public/skills/reactjs.png'
+import nextjs from './../../../../public/skills/nextjs.png'
+import tailwind from './../../../../public/skills/tailwind.png'
 
 
 
@@ -18,7 +18,7 @@ const SkillsSection = () => {
     <Section
       title="Skills"
       content={
-        <div className='flex flex-row gap-4 flex-wrap'>
+        <div className='flex flex-row gap-4 flex-wrap justify-center'>
           <SkillCard title="Java SE" score={75} image={java}/>
           <SkillCard title="Spring Framowork" score={30} image={spring}/>
           <SkillCard title="JavaFX UI" score={50} image={javafx}/>
