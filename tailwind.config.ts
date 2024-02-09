@@ -14,7 +14,10 @@ const config: Config = {
         'subtle-shadow':'rgba(0, 0, 0, 0.1)',
         'soft-dimness':'rgba(0, 0, 0, 0.2)',
 
+        'frosted-silver': 'rgba(220, 220, 220, 0.15)',
+
         'lemon-mist':'rgba(255, 255, 15, 0.1)',
+        'pale-yellow':'rgba(255, 255, 15, 0.2)',
         'olive-yellow':'rgba(219, 217, 85, 1)',
         'soft-sunlight':'rgba(242, 240, 132, 1)',
         'gold':'rgba(255, 193, 0, 1)',
