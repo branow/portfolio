@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "./Section";
+import Section from "../Section";
 
 const AboutSection = () => {
   return (
@@ -7,7 +7,7 @@ const AboutSection = () => {
       <Section
         title="About"
         content={
-          <div>
+          <div className="text-xl">
             I am a Java Developer enthusiastic about transforming ideas into
             efficient software solutions. I've worked on various projects
             showcasing my backend development skills using <b>Spring Boot</b>,{" "}
