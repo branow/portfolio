@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+p::first-line {
+  text-align: unset;
+  text-indent: 2rem;
+}
+
+p {
+  padding: 0.5rem;
+  text-align: justify;
+}
+
+b {
+  color: rgba(96, 97, 103, 1);
+  font-weight: 700;
+}
+
+mark {
+  color: rgba(63, 68, 98, 1);
+  background-color: transparent;
+  font-weight: 800;
+}
+
+
+a {
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+
+a:active {
+  color: rgba(255, 193, 0, 1);
+}
+
 .shine-container::before {
   content: "";
   position: absolute;
