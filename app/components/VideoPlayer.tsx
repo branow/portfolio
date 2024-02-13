@@ -4,15 +4,13 @@ import ReactPlayer from "react-player";
 
 interface VideoPlayerParams {
   src: string;
-  width?: number;
-  height?: number;
 }
 
-const VideoPlayer = ({ src, width, height }: VideoPlayerParams) => {
+const VideoPlayer = ({ src }: VideoPlayerParams) => {
   return (
     <ReactPlayer
-      width={width}
-      height={height}
+      width="100%"
+      height="100%"
       url={src}
       controls={true}
       // light is usefull incase of dark mode

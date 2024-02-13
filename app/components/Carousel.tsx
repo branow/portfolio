@@ -20,13 +20,15 @@ const Carousel = ({ elements }: CarouselParams) => {
     <>
       <div className="w-full">
         <div id="slide2" className="carousel-item relative w-full">
-          <div className="absolute left-5 top-1/2">
+          <div className="absolute left-5 top-1/2 z-10">
             <button className="btn btn-circle" onClick={() => previous()}>
               ❮
             </button>
           </div>
-          <div className="m-auto">{elements[pointer]}</div>
-          <div className="absolute ro-5 right-5 top-1/2">
+          <div className="w-full aspect-video flex flex-col justify-center items-center">
+            {elements[pointer]}
+          </div>
+          <div className="absolute ro-5 right-5 top-1/2 z-10">
             <button className="btn btn-circle" onClick={() => next()}>
               ❯
             </button>
