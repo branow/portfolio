@@ -37,7 +37,7 @@ export const footerColumns = [
     title: 'More',
     links: [
       {
-        lable: 'Email',
+        lable: 'About',
         href: '/#about'
       },
       {
