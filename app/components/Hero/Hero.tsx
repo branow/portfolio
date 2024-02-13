@@ -3,15 +3,15 @@ import React from "react";
 import TypeAnimationText from "./TypeAnimationText";
 import ShinyLink from "./ShinyLink";
 import { SocialMediaLinkBar } from "./SocialMediaLinkBar";
-import myphoto from "./../../../public/myphoto.png";
+import myphoto from "@/public/myphoto.png";
 
 const Hero = () => {
   return (
     <>
-      <div className="p-5 relative flex flex-col gap-8 justify-around items-center
+      <div className="p-5 py-12 relative flex flex-col gap-8 justify-around items-center
       lg:flex-row-reverse">
       <div>
-          <div className="relative w-[300px] sm:w-[400px]">
+          <div className="relative w-[300px] sm:w-[400px] opacity-1">
             <Image
               alt="my-photo"
               src={myphoto}
@@ -47,10 +47,11 @@ const Hero = () => {
             </div>
           </div>
           <div className="relative">
-            <ShinyLink href="/" title="Contact Me" />
+            <ShinyLink href="mailto:bodnarorestdraw@gmail.com" title="Contact Me" />
           </div>
         </div>
-        <div className="w-fit h-fit absolute top-[10%] right-0">
+        <div className="w-fit h-fit fixed right-4 top-[10%] md:right-10 lg:right-[5%]
+        lg:top-[15%]">
           <SocialMediaLinkBar iconSize={20} />
         </div>
       </div>

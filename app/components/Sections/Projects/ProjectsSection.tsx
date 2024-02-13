@@ -1,14 +1,15 @@
 import React from "react";
 import Section from "../Section";
 import ProjectCard from "./ProjectCard";
-import memo from "./../../../../public/projects/memo-title.png";
-import eco from "./../../../../public/projects/eco-title.png";
-import lcards from "./../../../../public/projects/lcards-title.png";
+import memo from "@/public/projects/memo-title.png";
+import eco from "@/public/projects/eco-title.png";
+import lcards from "@/public/projects/lcards-title.png";
 
 const ProjectsSection = () => {
   return (
     <>
       <Section
+        id="portfolio"
         title="Portfolio"
         content={
           <div className="flex flex-row gap-4 flex-wrap justify-center">

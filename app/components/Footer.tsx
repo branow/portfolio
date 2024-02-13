@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="p-5 bg-neutral text-neutral-content">
+      <footer id="footer" className="p-5 bg-neutral text-neutral-content">
         <div className="max-w-[70%] m-auto">
           <div className="footer p-5 justify-around">
             {columns.map((col) => (

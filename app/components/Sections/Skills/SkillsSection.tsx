@@ -1,14 +1,14 @@
 import React from 'react'
 import Section from '../Section'
 import SkillCard from './SkillCard'
-import java from './../../../../public/skills/java.png'
-import spring from './../../../../public/skills/spring.png'
-import javafx from './../../../../public/skills/javafx.png'
-import mysql from './../../../../public/skills/mysql.png'
-import git from './../../../../public/skills/git.png'
-import reactjs from './../../../../public/skills/reactjs.png'
-import nextjs from './../../../../public/skills/nextjs.png'
-import tailwind from './../../../../public/skills/tailwind.png'
+import java from '@/public/skills/java.png'
+import spring from '@/public/skills/spring.png'
+import javafx from '@/public/skills/javafx.png'
+import mysql from '@/public/skills/mysql.png'
+import git from '@/public/skills/git.png'
+import reactjs from '@/public/skills/reactjs.png'
+import nextjs from '@/public/skills/nextjs.png'
+import tailwind from '@/public/skills/tailwind.png'
 
 
 

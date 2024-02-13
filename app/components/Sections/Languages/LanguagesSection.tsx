@@ -6,6 +6,7 @@ const LanguagesSection = () => {
   return (
     <>
     <Section
+      id="languages"
       title="Languages"
       content={
         <div className='flex flex-col gap-10 flex-wrap justify-center items-center
