@@ -1,10 +1,18 @@
 import React from "react";
-import LCardsCarousel from "./LCardsCarousel";
+import Carousel from "@/app/components/Carousel";
+import Image from "next/image";
+import lcardsTitle from "/public/projects/lcards-title.png";
+import VideoPlayer from "@/app/components/VideoPlayer";
 
 const page = () => {
   return (
     <div className="flex flex-col">
-      <LCardsCarousel />
+      <Carousel
+        elements={[
+          <Image alt="Title Photo" src={lcardsTitle} />,
+          <VideoPlayer src="https://youtu.be/sNUnxD0BV1U" />,
+        ]}
+      />
       <div className="flex flex-col gap-4 px-4 py-6 text-xl">
         <div className="text-center text-3xl font-bold">LCards</div>
         <p>

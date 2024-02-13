@@ -1,10 +1,18 @@
 import React from "react";
-import EcoCarausel from "./EcoCarausel";
+import Carousel from "@/app/components/Carousel";
+import Image from "next/image";
+import ecoTitle from "/public/projects/eco-title.png";
+import VideoPlayer from "@/app/components/VideoPlayer";
 
 const page = () => {
   return (
     <div className="flex flex-col">
-      <EcoCarausel />
+            <Carousel
+        elements={[
+          <Image alt="Title Photo" src={ecoTitle} />,
+          <VideoPlayer src="https://youtu.be/AiJNE-IVkMQ" />,
+        ]}
+      />
       <div className="flex flex-col gap-4 px-4 py-6 text-xl">
         <div className="text-center text-3xl font-bold">
           Environmental Monitoring

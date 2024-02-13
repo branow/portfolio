@@ -1,10 +1,19 @@
 import React from "react";
-import { MemoCarousel } from "./MemoCarousel";
+import Carousel from "@/app/components/Carousel";
+import Image from "next/image";
+import memoTitle from "/public/projects/memo-title.png";
+import VideoPlayer from "@/app/components/VideoPlayer";
 
 const page = () => {
   return (
     <div className="flex flex-col">
-      <MemoCarousel />
+      <Carousel
+        elements={[
+          <Image alt="Title Photo" src={memoTitle} />,
+          <VideoPlayer src="https://youtu.be/McBXUoEl72A" />,
+          <VideoPlayer src="https://youtu.be/3kwPVQeOuNo" />,
+        ]}
+      />
       <div className="flex flex-col gap-4 px-4 py-6 text-xl">
         <div className="text-center text-3xl font-bold">Memo</div>
         <p>
