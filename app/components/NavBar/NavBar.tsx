@@ -7,10 +7,10 @@ export const NavBar = () => {
 
   const links = [
     ["Home", "/"],
-    ["About", "#about"],
-    ["Portfolio", "#portfolio"],
-    ["Education", "#education"],
-    ["Contact", "#contact"],
+    ["About", "/#about"],
+    ["Portfolio", "/#portfolio"],
+    ["Education", "/#education"],
+    ["Contact", "/#footer"],
   ];
 
   return (

@@ -9,8 +9,8 @@ interface NavLinkProps {
 const NavLink = ({ href, title }: NavLinkProps) => {
   return (
     <>
-      <div className='rounded-lg text-neutral-content hover:bg-frosted-silver
-          hover:text-white active:bg-pale-yellow'>
+      <div className='rounded-lg text-neutral-content
+          hover:text-white active:bg-frosted-silver'>
         <Link href={href}>
           <div className='px-6 py-2 text-xl font-bold '>
           {title}
