@@ -51,7 +51,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-fit h-fit fixed right-4 top-[10%] md:right-10 lg:right-[5%]
-        lg:top-[15%]">
+        lg:top-[15%] z-10">
           <SocialMediaLinkBar iconSize={20} />
         </div>
       </div>

@@ -28,12 +28,8 @@ a {
   font-weight: 700;
 }
 
-a:hover {
-  text-decoration-line: underline;
-}
-
 a:active {
-  color: rgba(255, 193, 0, 1);
+  color: rgba(255, 193, 0, 0.4);
 }
 
 .shine-container::before {

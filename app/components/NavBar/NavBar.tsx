@@ -15,7 +15,7 @@ export const NavBar = () => {
 
   return (
     <>
-      <div className="w-full p-2 bg-neutral opacity-90 fixed top-0 z-10 flex flex-col md:opacity-100">
+      <div className="w-full p-2 bg-neutral opacity-90 fixed top-0 z-20 flex flex-col md:opacity-100">
         <button
           className="p-3 rounded-full w-full text-neutral-content hover:bg-frosted-silver
           hover:text-white active:bg-pale-yellow md:hidden"

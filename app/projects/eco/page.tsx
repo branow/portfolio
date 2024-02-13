@@ -60,7 +60,7 @@ const page = () => {
           and update information dynamically.
         </p>
         <span className="p-2 flex flex-col gap-3 text-lg ">
-          <a href="https://github.com/branow/eco-monitoring" target="_blank">
+          <a className="hover:underline" href="https://github.com/branow/eco-monitoring" target="_blank">
             GitHub Repository
           </a>
         </span>
