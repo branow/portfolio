@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="flex flex-col gap-2 items-center justify-center">
             <div className="p-2 flex flex-row items-end">
               <span className="p-1 text-2xl font-medium text-deep-midnight">
-                I'M
+                I&apos;M
               </span>
               <span className="p-1 w-fit flex font-black ">
                 <span className="w-fit text-5xl text-center text-transparent 

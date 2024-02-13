@@ -9,8 +9,8 @@ const page = () => {
     <div className="flex flex-col">
             <Carousel
         elements={[
-          <Image alt="Title Photo" src={ecoTitle} />,
-          <VideoPlayer src="https://youtu.be/AiJNE-IVkMQ" />,
+          <Image key='title' alt="Title Photo" src={ecoTitle} />,
+          <VideoPlayer key='v1' src="https://youtu.be/AiJNE-IVkMQ" />,
         ]}
       />
       <div className="flex flex-col gap-4 px-4 py-6 text-xl">
@@ -54,7 +54,7 @@ const page = () => {
           <mark>Java </mark>
           with the <mark>Spring Boot Framework</mark>. The backend, powered by{" "}
           <mark>Java</mark>, interacts with a <mark>MySQL</mark> database to
-          retrieve and process the necessary data. The website's frontend
+          retrieve and process the necessary data. The website&apos;s frontend
           primarily utilizes <mark>HTML</mark> and <mark>JavaScript</mark>, with{" "}
           <mark>Ajax</mark> calls communicating with the Java server to fetch
           and update information dynamically.

@@ -9,9 +9,9 @@ const page = () => {
     <div className="flex flex-col">
       <Carousel
         elements={[
-          <Image alt="Title Photo" src={memoTitle} />,
-          <VideoPlayer src="https://youtu.be/McBXUoEl72A" />,
-          <VideoPlayer src="https://youtu.be/3kwPVQeOuNo" />,
+          <Image key='title' alt="Title Photo" src={memoTitle} />,
+          <VideoPlayer key='v1' src="https://youtu.be/McBXUoEl72A" />,
+          <VideoPlayer key='v2' src="https://youtu.be/3kwPVQeOuNo" />,
         ]}
       />
       <div className="flex flex-col gap-4 px-4 py-6 text-xl">
