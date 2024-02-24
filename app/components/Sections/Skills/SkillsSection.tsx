@@ -19,9 +19,9 @@ const SkillsSection = () => {
       title="Skills"
       content={
         <div className='flex flex-row gap-4 flex-wrap justify-center'>
-          <SkillCard title="Java SE" score={75} image={java}/>
-          <SkillCard title="Spring Framowork" score={30} image={spring}/>
-          <SkillCard title="JavaFX UI" score={50} image={javafx}/>
+          <SkillCard title="Java SE" score={80} image={java}/>
+          <SkillCard title="Spring Framowork" score={40} image={spring}/>
+          <SkillCard title="JavaFX UI" score={30} image={javafx}/>
           <SkillCard title="MySQL RDMS" score={80} image={mysql}/>
           <SkillCard title="Git VCS" score={70} image={git}/>
           <SkillCard title="React.js" score={45} image={reactjs}/>

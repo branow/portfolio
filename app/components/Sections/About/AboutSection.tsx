@@ -9,13 +9,15 @@ const AboutSection = () => {
         title="About"
         content={
           <div className="text-xl">
-            I am a Java Developer enthusiastic about transforming ideas into
-            efficient software solutions. I&apos;ve worked on various projects
-            showcasing my backend development skills using <mark>Spring Boot</mark>,{" "}
-            <mark>Spring MVC</mark>, and <mark>JPA Hibernate</mark>. Also, my focus includes
-            creating visually appealing desktop applications with <mark>JavaFX</mark>{" "}
-            and <mark>FXML</mark>. I&apos;m venturing into the front-end world with{" "}
-            <mark>ReactJS</mark>, <mark>HTML</mark>, and <mark>CSS</mark> (<mark>Tailwind</mark>).
+            I&apos;m a <mark>Java Developer</mark> focusing on backend development using Java 
+            frameworks including <mark>Spring Core</mark>, <mark>Spring Web MVC</mark>
+            , <mark>Spring Data</mark>, <mark>Spring Boot</mark>, <mark>Spring Security</mark>
+            , and <mark>Hibernate</mark>. I&apos;m confident in working with SQL databases, 
+            particularly with <mark>MySQL</mark>. Capable of basic tasks in <mark>JavaFX </mark>
+             for desktop applications and possesses entry-level proficiency in frontend technologies 
+             like <mark>HTML</mark>, <mark>CSS</mark>, <mark>Tailwind CSS</mark>, <mark>JavaScript</mark>
+             , <mark>ReactJs</mark>, and <mark>NextJs</mark>. Proficient in utilizing <mark>Maven </mark> 
+             and <mark>Git</mark> for project management and version control.
           </div>
         }
       />
