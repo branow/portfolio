@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 import memo from "@/public/projects/memo-title.png";
 import eco from "@/public/projects/eco-title.png";
 import lcards from "@/public/projects/lcards-title.png";
+import et from "@/public/projects/et-1.png";
 
 const ProjectsSection = () => {
   return (
@@ -18,6 +19,12 @@ const ProjectsSection = () => {
               description="'Memo' is a website designed for quick and efficient vocabulary memorization through the use of flashcard techniques."
               image={memo}
               href="/projects/memo"
+            />
+            <ProjectCard
+              title="Expense Tracker"
+              description="REST API designed to facilitate the tracking of user payment transactions"
+              image={et}
+              href="/projects/expense-tracker"
             />
             <ProjectCard
               title="Environmental Monitoring of Enterprises"
