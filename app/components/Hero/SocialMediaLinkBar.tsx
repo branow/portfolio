@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiUpwork } from "react-icons/si";
 import IconLink from "./IconLink";
@@ -20,6 +20,11 @@ export const SocialMediaLinkBar = ({ iconSize } : SocialMediaLinkBarParams) => {
         <IconLink
           Icon={SiUpwork}
           href="https://www.upwork.com/freelancers/~017873b23eb5e9bba6"
+          size={iconSize}
+        />
+        <IconLink
+          Icon={FaGithub}
+          href="https://github.com/branow"
           size={iconSize}
         />
         <IconLink
