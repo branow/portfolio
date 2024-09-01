@@ -18,7 +18,7 @@ const AboutSection = () => {
             tools such as <mark>Git</mark> and <mark>Docker</mark>.
             <br/>
             <br/>
-            Recently, I've started exploring <mark>Golang</mark> and its related tools and frameworks.
+            Recently, I&apos;ve started exploring <mark>Golang</mark> and its related tools and frameworks.
           </div>
         }
       />
