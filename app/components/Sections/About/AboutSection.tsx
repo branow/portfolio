@@ -1,4 +1,3 @@
-import React from "react";
 import Section from "../Section";
 
 const AboutSection = () => {
@@ -9,15 +8,17 @@ const AboutSection = () => {
         title="About"
         content={
           <div className="text-xl">
-            I&apos;m a <mark>Java Developer</mark> focusing on backend development using Java 
-            frameworks including <mark>Spring Core</mark>, <mark>Spring Web MVC</mark>
-            , <mark>Spring Data</mark>, <mark>Spring Boot</mark>, <mark>Spring Security</mark>
-            , and <mark>Hibernate</mark>. I&apos;m confident in working with SQL databases, 
-            particularly with <mark>MySQL</mark>. Capable of basic tasks in <mark>JavaFX </mark>
-             for desktop applications and possesses entry-level proficiency in frontend technologies 
-             like <mark>HTML</mark>, <mark>CSS</mark>, <mark>Tailwind CSS</mark>, <mark>JavaScript</mark>
-             , <mark>ReactJs</mark>, and <mark>NextJs</mark>. Proficient in utilizing <mark>Maven </mark> 
-             and <mark>Git</mark> for project management and version control.
+            I have been programming for several years, during which I&apos;ve become familiar with
+            various technologies. My strongest skill is backend development, particularly
+            using <mark>Java</mark> and the <mark>Spring framework</mark> (including
+            <mark> Spring Security</mark> and <mark>Spring OAuth</mark>). Through
+            my personal projects, I&apos;ve also gained knowledge
+            in frontend technologies like <mark>React</mark>, <mark>Next.js</mark> and <mark>Tailwind CSS</mark>.
+            Additionally, I have experience working with databases and have knowledge of developer
+            tools such as <mark>Git</mark> and <mark>Docker</mark>.
+            <br/>
+            <br/>
+            Recently, I've started exploring <mark>Golang</mark> and its related tools and frameworks.
           </div>
         }
       />

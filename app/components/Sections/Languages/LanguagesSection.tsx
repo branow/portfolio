@@ -1,4 +1,3 @@
-import React from 'react'
 import Section from '../Section'
 import LanguageBar from './LanguageBar'
 
@@ -12,7 +11,7 @@ const LanguagesSection = () => {
         <div className='flex flex-col gap-10 flex-wrap justify-center items-center
         lg:flex-row'>
           <LanguageBar language='Ukrainian' level='C2' />
-          <LanguageBar language='English' level='B1' />
+          <LanguageBar language='English' level='B2' />
         </div>
       }
     />

@@ -1,9 +1,8 @@
+import myphoto from "@/public/main-photo.png";
 import Image from "next/image";
-import React from "react";
-import TypeAnimationText from "./TypeAnimationText";
 import ShinyLink from "./ShinyLink";
 import { SocialMediaLinkBar } from "./SocialMediaLinkBar";
-import myphoto from "@/public/myphoto.png";
+import TypeAnimationText from "./TypeAnimationText";
 
 const Hero = () => {
   return (
@@ -47,7 +46,7 @@ const Hero = () => {
               <span className="hidden md:inline">
                 <TypeAnimationText
                   duration={1500}
-                  labels={["Java", "Spring Boot", "REST API"]}
+                  labels={["Software", "Java", "Spring Boot", "REST API"]}
                 />
               </span>
               Developer
