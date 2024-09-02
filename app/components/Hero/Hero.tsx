@@ -42,7 +42,7 @@ const Hero = () => {
               </span>
             </div>
             <div className="text-xl md:text-2xl font-bold text-deep-midnight">
-              <span className="md:hidden">Java </span>
+              <span className="md:hidden">Software </span>
               <span className="hidden md:inline">
                 <TypeAnimationText
                   duration={1500}
