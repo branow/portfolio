@@ -1,10 +1,7 @@
 import React from "react";
 import Section from "../Section";
 import ProjectCard from "./ProjectCard";
-import memo from "@/public/projects/memo-title.png";
-import eco from "@/public/projects/eco-title.png";
-import lcards from "@/public/projects/lcards-title.png";
-import et from "@/public/projects/et-1.png";
+import data from "@/app/portfolio";
 
 const ProjectsSection = () => {
   return (
@@ -14,30 +11,14 @@ const ProjectsSection = () => {
         title="Portfolio"
         content={
           <div className="flex flex-row gap-4 flex-wrap justify-center">
-            <ProjectCard
-              title="Memo"
-              description="'Memo' is a website designed for quick and efficient vocabulary memorization through the use of flashcard techniques."
-              image={memo}
-              href="/projects/memo"
-            />
-            <ProjectCard
-              title="Expense Tracker"
-              description="REST API designed to facilitate the tracking of user payment transactions"
-              image={et}
-              href="/projects/expense-tracker"
-            />
-            <ProjectCard
-              title="Environmental Monitoring of Enterprises"
-              description="The 'Environmental Monitoring of Enterprises' website as a comprehensive platform for processing indicators related to air emission"
-              image={eco}
-              href="/projects/eco"
-            />
-            <ProjectCard
-              title="LCards"
-              description="'LCards' is a desktop application designed for the rapid and effective memorization of English vocabulary using flashcard techniques."
-              image={lcards}
-              href="/projects/lcards"
-            />
+            {data.projects.map(project => (
+              <ProjectCard
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                href={project.href}
+              />
+            ))}
           </div>
         }
       />

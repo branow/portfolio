@@ -1,4 +1,5 @@
 import Section from "../Section";
+import data from "../../../portfolio";
 
 const AboutSection = () => {
   return (
@@ -8,22 +9,29 @@ const AboutSection = () => {
         title="About"
         content={
           <div className="text-xl">
-            I have been programming for several years, during which I&apos;ve become familiar with
-            various technologies. My strongest skill is backend development, particularly
-            using <mark>Java</mark> and the <mark>Spring framework</mark> (including
-            <mark> Spring Security</mark> and <mark>Spring OAuth</mark>). Through
-            my personal projects, I&apos;ve also gained knowledge
-            in frontend technologies like <mark>React</mark>, <mark>Next.js</mark> and <mark>Tailwind CSS</mark>.
-            Additionally, I have experience working with databases and have knowledge of developer
-            tools such as <mark>Git</mark> and <mark>Docker</mark>.
-            <br/>
-            <br/>
-            Recently, I&apos;ve started exploring <mark>Golang</mark> and its related tools and frameworks.
+            {data.about.paragraphs.map(text => <Paragraph text={text} />)}
           </div>
         }
       />
     </>
   );
 };
+
+const Paragraph = ({ text }: { text: string }) => {
+  const parts = text.split(/(\*[^*]+\*)/);
+
+  return (
+    <p>
+      {parts.map((part, index) => {
+        if (part.startsWith("*") && part.endsWith("*")) {
+          const content = part.slice(1, -1); // remove the asterisks
+          return <mark key={index}>{content}</mark>;
+        } else {
+          return <span key={index}>{part}</span>;
+        }
+      })}
+    </p>
+  );
+}
 
 export default AboutSection;

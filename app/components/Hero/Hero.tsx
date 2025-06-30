@@ -3,6 +3,7 @@ import Image from "next/image";
 import ShinyLink from "./ShinyLink";
 import { SocialMediaLinkBar } from "./SocialMediaLinkBar";
 import TypeAnimationText from "./TypeAnimationText";
+import data from "../../portfolio";
 
 const Hero = () => {
   return (
@@ -42,14 +43,14 @@ const Hero = () => {
               </span>
             </div>
             <div className="text-xl md:text-2xl font-bold text-deep-midnight">
-              <span className="md:hidden">Software </span>
+              <span className="md:hidden">{data.hero.roles.prefix}</span>
               <span className="hidden md:inline">
                 <TypeAnimationText
                   duration={1500}
-                  labels={["Software", "Java", "Spring Boot", "REST API"]}
+                  labels={data.hero.roles.prefixes}
                 />
               </span>
-              Developer
+              {" " + data.hero.roles.postfix}
             </div>
           </div>
           <div className="relative">

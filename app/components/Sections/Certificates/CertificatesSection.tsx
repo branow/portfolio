@@ -1,11 +1,20 @@
-import gf from "@/public/certificates/green-forest-english.png";
-import english from "@/public/certificates/softserve-english.jpg";
-import java from "@/public/certificates/softserve-javase.jpg";
 import Image from "next/image";
 import Carousel from "../../Carousel";
 import Section from "../Section";
+import data from "@/app/portfolio";
 
 const CerticatesSection = () => {
+  const elements = data.certificates.map(c => 
+    <Image
+      className="rounded-2xl"
+      key={c.key}
+      alt={c.alt}
+      src={c.src}
+      width={800}
+      height={600}
+    />,
+  );
+
   return (
     <>
       <Section
@@ -13,26 +22,7 @@ const CerticatesSection = () => {
         title="Certificates"
         content={
           <Carousel
-            elements={[
-              <Image
-                key="java"
-                className="rounded-2xl"
-                alt="Green Forest Certificate B2 English Course"
-                src={gf}
-              />,
-              <Image
-                key="java"
-                className="rounded-2xl"
-                alt="Java SoftServe Academy Certification"
-                src={java}
-              />,
-              <Image
-                key="english"
-                className="rounded-2xl"
-                alt="English SoftServe Academy Evaluation"
-                src={english}
-              />,
-            ]}
+            elements={elements}
           />
         }
       />

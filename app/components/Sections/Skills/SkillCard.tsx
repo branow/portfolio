@@ -1,10 +1,10 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 interface SkillCardParams {
   title: string;
   score: number;
-  image: StaticImageData;
+  image: string;
 }
 
 const SkillCard = ({ title, score, image }: SkillCardParams) => {
@@ -17,7 +17,7 @@ const SkillCard = ({ title, score, image }: SkillCardParams) => {
       <div className="w-fit p-6 pb-3 card glass shadow-lg">
         <div className="w-fit flex flex-col gap-2 justify-center">
           <div className="flex flex-row gap-2 justify-center items-end">
-            <Image alt={title + " icon"} src={image} width={50} />
+            <Image alt={title + " icon"} src={image} width={50} height={50} />
             <div className="text-2xl font-bold">{title}</div>
           </div>
           <div>

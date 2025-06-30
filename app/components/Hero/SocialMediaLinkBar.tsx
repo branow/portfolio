@@ -3,46 +3,31 @@ import { FaLinkedinIn, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa
 import { FaXTwitter } from "react-icons/fa6";
 import { SiUpwork } from "react-icons/si";
 import IconLink from "./IconLink";
+import data from "../../portfolio";
 
 interface SocialMediaLinkBarParams {
   iconSize: number;
 }
 
+const icons = new Map([
+  ["linkedin", FaLinkedinIn],
+  ["upwork", SiUpwork],
+  ["github", FaGithub],
+  ["facebook", FaFacebookF],
+  ["twitter", FaXTwitter],
+  ["instagram", FaInstagram],
+]);
+
 export const SocialMediaLinkBar = ({ iconSize } : SocialMediaLinkBarParams) => {
   return (
-    <>
-      <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2">
+      {data.hero.socialMediaLinks.map(sm => (
         <IconLink
-          Icon={FaLinkedinIn}
-          href="https://www.linkedin.com/in/orest-bodnar"
+          Icon={icons.get(sm.name)!}
+          href={sm.link}
           size={iconSize}
         />
-        <IconLink
-          Icon={SiUpwork}
-          href="https://www.upwork.com/freelancers/~017873b23eb5e9bba6"
-          size={iconSize}
-        />
-        <IconLink
-          Icon={FaGithub}
-          href="https://github.com/branow"
-          size={iconSize}
-        />
-        <IconLink
-          Icon={FaFacebookF}
-          href="https://www.facebook.com/profile.php?id=61556098941984"
-          size={iconSize}
-        />
-        <IconLink
-          Icon={FaXTwitter}
-          href="https://twitter.com/_branow_"
-          size={iconSize}
-        />
-        <IconLink
-          Icon={FaInstagram}
-          href="https://www.instagram.com/_branow_/"
-          size={iconSize}
-        />
-      </div>
-    </>
+      ))}
+    </div>
   );
 };

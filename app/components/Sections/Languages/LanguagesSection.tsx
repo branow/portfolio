@@ -1,5 +1,6 @@
 import Section from '../Section'
 import LanguageBar from './LanguageBar'
+import data from "@/app/portfolio";
 
 const LanguagesSection = () => {
   return (
@@ -10,8 +11,9 @@ const LanguagesSection = () => {
       content={
         <div className='flex flex-col gap-10 flex-wrap justify-center items-center
         lg:flex-row'>
-          <LanguageBar language='Ukrainian' level='C2' />
-          <LanguageBar language='English' level='B2' />
+          {data.languages.map(lang => (
+            <LanguageBar language={lang.title} level={lang.level} />
+          ))}
         </div>
       }
     />

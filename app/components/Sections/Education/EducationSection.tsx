@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "../Section";
 import Timeline from "./Timeline";
-import { education } from "@/public/education";
+import data from "@/app/portfolio";
 
 const EducationSection = () => {
   return (
@@ -11,7 +11,7 @@ const EducationSection = () => {
         title="Education"
         content={
           <div>
-            <Timeline events={education} />
+            <Timeline events={data.education} />
           </div>
         }
       />
