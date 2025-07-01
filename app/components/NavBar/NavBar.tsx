@@ -8,9 +8,9 @@ export const NavBar = () => {
   const links = [
     ["Home", "/"],
     ["About", "/#about"],
+    ["Experience", "/#experience"],
     ["Portfolio", "/#portfolio"],
     ["Education", "/#education"],
-    ["Contact", "/#footer"],
   ];
 
   return (

@@ -2,56 +2,70 @@ export default {
   hero: {
     roles: {
       prefix: "Software",
-      prefixes: ["Software", "Java", "Spring Boot", "REST API"],
+      prefixes: ["Software", "Full-Stack", "Back-End", "Java", "React"],
       postfix: "Developer",
     },
     socialMediaLinks: [
-      {
-        name: "linkedin",
-        link: "https://www.linkedin.com/in/orest-bodnar",
-      },
-      {
-        name: "upwork",
-        link: "https://www.upwork.com/freelancers/~017873b23eb5e9bba6",
-      },
       {
         name: "github",
         link: "https://github.com/branow",
       },
       {
-        name: "facebook",
-        link: "https://www.facebook.com/profile.php?id=61556098941984",
-      },
-      {
-        name: "twitter",
-        link: "https://twitter.com/_branow_",
+        name: "linkedin",
+        link: "https://www.linkedin.com/in/orest-bodnar",
       },
       {
         name: "instagram",
         link: "https://www.instagram.com/_branow_/",
       },
+      {
+        name: "upwork",
+        link: "https://www.upwork.com/freelancers/~017873b23eb5e9bba6",
+      },
     ],
   },
   about: {
     paragraphs: [
-      `I have been programming for several years, during which I've become familiar with various technologies. My strongest skill is backend development, particularly using *Java* and the *Spring framework* (including *Spring Security* and *Spring OAuth2*). Through my personal projects, I've also gained knowledge in frontend technologies like *React*, *Next.js* and *Tailwind CSS*. Additionally, I have experience working with databases and have knowledge of developer tools such as *Git* and *Docker*.,`,
-      `Recently, I've started exploring *Golang* and its related tools and frameworks.`,
+      `*Full-stack* Developer with about *one year* of freelance experience delivering software solutions for international clients.`,
+      `Around *half a year* at *EPAM* as a student and trainee, primarily focused on *Java* development, gaining practical industry experience.`,
+      `Skilled in Java Backend development with strong expertise in *Spring Boot* and *React* frontend.`,
+      `Holds a *Bachelor’s* degree in Computer Science.`,
+      `*B2* level English speaker, confident in both verbal and written communication.`,
+      `Motivated to learn new technologies and continuously grow technical skills.`,
     ],
   },
   skills: [
-    { title: "Golang", score: 40, image: "/skills/golang.png" },
-    { title: "Java SE", score: 80, image: "/skills/java.png" },
+    { title: "Java", score: 70, image: "/skills/java.png" },
     { title: "Spring Framework", score: 50, image: "/skills/spring.png" },
-    { title: "MySQL RDMS", score: 80, image: "/skills/mysql.png" },
-    { title: "React.js", score: 45, image: "/skills/reactjs.png" },
-    { title: "Next.js", score: 30, image: "/skills/nextjs.png" },
+    { title: "JavaScript", score: 40, image: "/skills/js.png" },
+    { title: "TypeScript", score: 40, image: "/skills/ts.png" },
+    { title: "React JS", score: 50, image: "/skills/reactjs.png" },
+    { title: "Next JS", score: 30, image: "/skills/nextjs.png" },
     { title: "Tailwind CSS", score: 30, image: "/skills/tailwind.png" },
+    { title: "Golang", score: 40, image: "/skills/golang.png" },
+    { title: "MySQL RDMS", score: 80, image: "/skills/mysql.png" },
+    { title: "PostgreSQL", score: 40, image: "/skills/postgres.png" },
+    { title: "MongoDB", score: 30, image: "/skills/mongodb.png" },
     { title: "Git VCS", score: 70, image: "/skills/git.png" },
     { title: "Docker", score: 30, image: "/skills/docker.png" },
+    { title: "AWS", score: 30, image: "/skills/aws.png" },
   ],
   languages: [
     { title: "Ukrainian", level: "C2" },
     { title: "English", level: "B2" },
+  ],
+  experience: [
+    {
+      title: "EPAM SYSTEMS: Java Developer [INTERNSHIP]",
+      year: "JAN 2025 — NOW",
+      description: `Completed an individual REST API project under the guidance of a senior developer. Contributed to a team developing AWS Lambda services for a scientific conference
+management system.`,
+    },
+    {
+      title: "UPWORK: Full Stack Developer [FREELANCING]",
+      year: "JAN 2024 — NOW",
+      description: `Delivered full-stack solutions for clients across the US, India, Slovenia, and more, working independently on feature development, debugging, and web application enhancements. Notably led the end-to-end development of a browser-based web phone app, including frontend, backend, database integration, and authentication architecture.`
+    },
   ],
   education: [
     {
@@ -66,6 +80,18 @@ export default {
     },
   ],
   projects: [
+    {
+      title: "Webphone",
+      description: "'Webphone' a web-based softphone system, empowering users to make and receive Voice over IP (VoIP) calls directly from their browser.",
+      image: "/projects/webphone-title.png",
+      href: "/projects/webphone",
+    },
+    {
+      title: "Peer Chat",
+      description: "'Peer Chat' is a website for free peer-to-peer internet call communication.",
+      image: "/projects/peerchat-title.png",
+      href: "/projects/peer-chat",
+    },
     {
       title: "Memo",
       description: "'Memo' is a website designed for quick and efficient vocabulary memorization through the use of flashcard techniques.",
