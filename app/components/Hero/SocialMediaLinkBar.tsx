@@ -23,6 +23,7 @@ export const SocialMediaLinkBar = ({ iconSize } : SocialMediaLinkBarParams) => {
     <div className="flex flex-col gap-2">
       {data.hero.socialMediaLinks.map(sm => (
         <IconLink
+          key={sm.name}
           Icon={icons.get(sm.name)!}
           href={sm.link}
           size={iconSize}

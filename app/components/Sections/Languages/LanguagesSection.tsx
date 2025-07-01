@@ -12,7 +12,7 @@ const LanguagesSection = () => {
         <div className='flex flex-col gap-10 flex-wrap justify-center items-center
         lg:flex-row'>
           {data.languages.map(lang => (
-            <LanguageBar language={lang.title} level={lang.level} />
+            <LanguageBar key={lang.title} language={lang.title} level={lang.level} />
           ))}
         </div>
       }

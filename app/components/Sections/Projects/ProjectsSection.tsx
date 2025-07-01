@@ -13,6 +13,7 @@ const ProjectsSection = () => {
           <div className="flex flex-row gap-4 flex-wrap justify-center">
             {data.projects.map(project => (
               <ProjectCard
+                key={project.title}
                 title={project.title}
                 description={project.description}
                 image={project.image}

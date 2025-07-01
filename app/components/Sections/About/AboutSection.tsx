@@ -9,7 +9,7 @@ const AboutSection = () => {
         title="About"
         content={
           <div className="text-xl">
-            {data.about.paragraphs.map(text => <Paragraph text={text} />)}
+            {data.about.paragraphs.map((text, i) => <Paragraph key={i} text={text} />)}
           </div>
         }
       />
